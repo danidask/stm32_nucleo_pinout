@@ -1,0 +1,6 @@
+{
+    "GPIO_Output": "OUT",
+    "GPIO_Input": "IN",
+    "SYS_JTMS-SWDIO": "SWDIO",
+    "SYS_JTCK-SWCLK": "SWCLK"
+}

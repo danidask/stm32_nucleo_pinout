@@ -1,0 +1,98 @@
+{
+    "morpho_left.png": {
+        "origin_x": 397,
+        "origin_y": 35,
+        "connectors": [
+            {
+                "name": "CN7",
+                "n_pins": 38,
+                "dual_row": true,
+                "x": 20,
+                "y": 44,
+                "x_spacing": 22.6,
+                "y_spacing": 22.6,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "both"
+            }
+        ]
+    },
+    "morpho_right.png": {
+        "origin_x": 503,
+        "origin_y": 28,
+        "connectors": [
+            {
+                "name": "CN10",
+                "n_pins": 38,
+                "dual_row": true,
+                "x": -43,
+                "y": 44,
+                "x_spacing": 22.6,
+                "y_spacing": 22.6,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "both"
+            }
+        ]
+    },
+    "arduino.png": {
+        "origin_x": 322,
+        "origin_y": 44,
+        "connectors": [
+            {
+                "name": "CN6",
+                "n_pins": 8,
+                "dual_row": false,
+                "x": 87,
+                "y": 134,
+                "x_spacing": 0,
+                "y_spacing": 22.8,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "left"
+            },
+            {
+                "name": "CN8",
+                "n_pins": 6,
+                "dual_row": false,
+                "x": 87,
+                "y": 337,
+                "x_spacing": 0,
+                "y_spacing": 22.8,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "left"
+            },
+            {
+                "name": "CN5",
+                "n_pins": 10,
+                "dual_row": false,
+                "x": 537,
+                "y": 258,
+                "x_spacing": 0,
+                "y_spacing": -22.8,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "left"
+            },
+            {
+                "name": "CN9",
+                "n_pins": 8,
+                "dual_row": false,
+                "x": 537,
+                "y": 449,
+                "x_spacing": 0,
+                "y_spacing": -22.8,
+                "dot_size": 8,
+                "font_size": 26,
+                "marker_distance": 30,
+                "text_side": "left"
+            }
+        ]
+    }
+}

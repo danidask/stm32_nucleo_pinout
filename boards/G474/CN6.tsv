@@ -1,0 +1,9 @@
+Pin	Pin name	STM32 pin
+1	NC	-
+2	IOREF	-
+3	NRST	PG10-NRST
+4	3V3	-
+5	5V	-
+6	GND	-
+7	GND	-
+8	VIN	-

@@ -1,0 +1,12 @@
+The source files (tsv and footnotes) were obtained from:
+G474 from um2505-stm32g4-nucleo64-boards-mb1367-stmicroelectronics
+Table 15. ARDUINO® connectors pinout
+Table 16. Pin assignment of the ST morpho connectors
+
+morpho.tsv - The header has been manually added with the required names:
+    CN7L_pin	CN7L_name	CN7R_pin	CN7R_name	CN10L_pin	CN10L_name	CN10R_pin	CN10R_name
+
+CNx.tsv also copied from the datasheet, but split into individual files and only kept 3 columns (without the header):
+    Pin number	Pin name	STM32 pin
+
+and the json file was generated using the following command:

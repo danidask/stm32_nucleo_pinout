@@ -1,0 +1,7 @@
+Pin	Pin name	STM32 pin
+1	A0	PA0
+2	A1	PA1
+3	A2	PA4
+4	A3	PB0
+5	A4	PC1 / PB9
+6	A5	PC0 / PA15

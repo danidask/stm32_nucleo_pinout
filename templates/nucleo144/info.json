@@ -1,0 +1,104 @@
+{
+    "arduino_left.png": {
+        "origin_x": 165,
+        "origin_y": 17,
+        "connectors": [
+            {
+                "name": "CN8",
+                "n_pins": 16,
+                "dual_row": true,
+                "text_side": "both",
+                "x": 134,
+                "y": 122,
+                "x_spacing": 13.7,
+                "y_spacing": 13.5,
+                "dot_size": 4,
+                "font_size": 16,
+                "marker_distance": 20
+            },
+            {
+                "name": "CN9",
+                "n_pins": 30,
+                "dual_row": true,
+                "text_side": "both",
+                "x": 134,
+                "y": 241,
+                "x_spacing": 13.7,
+                "y_spacing": 13.5,
+                "dot_size": 4,
+                "font_size": 16,
+                "marker_distance": 20
+            }
+        ]
+    },
+    "arduino_right.png": {
+        "origin_x": 434,
+        "origin_y": 13,
+        "connectors": [
+            {
+                "name": "CN7",
+                "n_pins": 20,
+                "dual_row": true,
+                "text_side": "both",
+                "x": -149,
+                "y": 75,
+                "x_spacing": 13.7,
+                "y_spacing": 13.5,
+                "dot_size": 4,
+                "font_size": 16,
+                "marker_distance": 20
+            },
+            {
+                "name": "CN10",
+                "n_pins": 34,
+                "dual_row": true,
+                "text_side": "both",
+                "x": -149,
+                "y": 216,
+                "x_spacing": 13.7,
+                "y_spacing": 13.5,
+                "dot_size": 4,
+                "font_size": 16,
+                "marker_distance": 20
+            }
+        ]
+    },
+    "morpho_right.png": {
+        "origin_x": 0,
+        "origin_y": 0,
+        "connectors": [
+            {
+                "name": "CN12",
+                "n_pins": 70,
+                "dual_row": true,
+                "text_side": "both",
+                "x": 306,
+                "y": 49,
+                "x_spacing": 11.4,
+                "y_spacing": 11.4,
+                "dot_size": 4,
+                "font_size": 14,
+                "marker_distance": 20
+            }
+        ]
+    },
+    "morpho_left.png": {
+        "origin_x": 0,
+        "origin_y": 0,
+        "connectors": [
+            {
+                "name": "CN11",
+                "n_pins": 70,
+                "dual_row": true,
+                "text_side": "both",
+                "x": 279,
+                "y": 50,
+                "x_spacing": 11.4,
+                "y_spacing": 11.4,
+                "dot_size": 4,
+                "font_size": 14,
+                "marker_distance": 20
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+Based on STM document um2407-stm32h7-nucleo144-boards-mb1364-stmicroelectronics.pdf
+
+NUCLEO-H723ZG, NUCLEO-H743ZI2, and NUCLEO-H753ZI pin assignments
+Table 18. ZIO connector (CN7) pinout
+Table 19. ZIO connector (CN8) pinout
+Table 20. ZIO connector (CN9) pinout 
+Table 21. ZIO connector (CN10) pinout 
+Table 22. Pin assignment of the ST morpho connector 

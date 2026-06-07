@@ -1,0 +1,3 @@
+1.	PE2 is connected to both CN9 pin 14 (SAI_A_MCLK) and CN10 pin 25 (QSPI_BK1_IO2). Only one function must be used at one time.
+2.	PB13 is used as I2S_A_CK and connected to CN7 pin 5. If JP6 is ON, it is also connected to Ethernet PHY as RMII_TXD1. In this case, only one function of the Ethernet or I2S_A must be used.
+3.	PA7 is used as D11 and connected to CN7 pin 14. If SB31 is ON, it is also connected to Ethernet PHY as RMII_CRS_DV. In this case, only one function of the Ethernet or D11 must be used.

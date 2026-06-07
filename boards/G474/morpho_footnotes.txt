@@ -1,0 +1,8 @@
+1.	Default configuration in bold.
+2.	BOOT0 is not connected by default. The BOOT0 function is done by SW:
+-	Option byte nSWBOOT0 must be set to 0 (in that case, BOOT0 is taken from the Option byte nBOOT0)
+-	Option byte nBOOT0 must be set to 1 (in that case BOOT0 is active low).
+If nSWBOOT0 is set to 0, the BOOT0 is taken from pin PB8 / BOOT0.
+3.	AVDD connected to VREF+
+4.	5V_USB_CHGR is the 5 V power from the STLINK-V3E USB connector that rises first. It rises before the 5 V rising on the board.
+5.	PA13 and PA14 are shared with SWD signals connected to STLINK-V3E. It is not recommended to use them as I/O pins.
