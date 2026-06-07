@@ -1,7 +1,7 @@
 import unittest
 from stm32_nucleo_pinout.stm32_nucleo_pinout import get_allocated_pins, remove_suffix_allocated_pins
 import os
-import json
+import re
 
 
 class Test_get_allocated_pins(unittest.TestCase):
@@ -20,12 +20,15 @@ class Test_get_allocated_pins(unittest.TestCase):
                 break
             print(report_file)
             allocated_pins = get_allocated_pins(report_file)
-            # with open(report_file + "_temp_before.json", "w") as file:
-                # json.dump(allocated_pins, file, indent=4)
+            self.assertIsInstance(allocated_pins, dict)
+            self.assertGreater(len(allocated_pins), 0)
             allocated_pins = remove_suffix_allocated_pins(allocated_pins)
-            # with open(report_file + "_temp_after.json", "w") as file:
-                # json.dump(allocated_pins, file, indent=4)
-        
+            self.assertIsInstance(allocated_pins, dict)
+            self.assertGreater(len(allocated_pins), 0)
+            # After normalization all keys must be plain pin names (e.g. PA5, PC13)
+            for pin_name in allocated_pins.keys():
+                self.assertRegex(pin_name, r'^P[A-Z]\d+$', f"Unexpected pin name '{pin_name}' after normalization")
+
 
 if __name__ == '__main__':
     unittest.main()

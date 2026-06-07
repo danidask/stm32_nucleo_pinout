@@ -12,7 +12,7 @@
                 "x_spacing": 22.6,
                 "y_spacing": 22.6,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "both"
             }
@@ -31,7 +31,7 @@
                 "x_spacing": 22.6,
                 "y_spacing": 22.6,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "both"
             }
@@ -50,7 +50,7 @@
                 "x_spacing": 0,
                 "y_spacing": 22.8,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "left"
             },
@@ -63,7 +63,7 @@
                 "x_spacing": 0,
                 "y_spacing": 22.8,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "left"
             },
@@ -76,7 +76,7 @@
                 "x_spacing": 0,
                 "y_spacing": -22.8,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "left"
             },
@@ -89,7 +89,7 @@
                 "x_spacing": 0,
                 "y_spacing": -22.8,
                 "dot_size": 8,
-                "font_size": 26,
+                "font_size": 18,
                 "marker_distance": 30,
                 "text_side": "left"
             }

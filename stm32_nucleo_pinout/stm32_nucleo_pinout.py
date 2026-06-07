@@ -1,17 +1,15 @@
 from PIL import Image, ImageDraw, ImageFont
 import json
 import os
+import sys
 import argparse
 from time import time
 import logging
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
 # Get the directory of the current script
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BOARDS_DIR = os.path.join(SCRIPT_DIR, "..", "boards")
-TEMPLATES_DIR = os.path.join(SCRIPT_DIR, "..", "templates")
+BOARDS_DIR = os.path.join(SCRIPT_DIR, "boards")
+TEMPLATES_DIR = os.path.join(SCRIPT_DIR, "templates")
 
 # Global variables to cache some file reads
 _functions_alias_cache = None
@@ -288,17 +286,18 @@ def main():
     parser.add_argument("-o", "--output", required=False, help="Save to a output file instead of showing")
     parser.add_argument("-s", "--save", action="store_true", help="Same as output but saves to a default file")
     parser.add_argument("-k", "--skip_check", action="store_true", help="Skip the check for the file modification date")
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     args = parser.parse_args()
     if not os.path.exists(args.cubeide_report_file):
         print(f"File {args.cubeide_report_file} not found")
-        exit(1)
+        sys.exit(1)
     if not args.skip_check:
         modification_date = os.path.getmtime(args.cubeide_report_file)
         minutes_old = (time() - modification_date) / 60
         if minutes_old > 5:
             print(f"WARNING!! Report file is {int(minutes_old)} minutes old, consider regenerate it.")
             if input("Do you want to continue? [y/n] ").lower() != "y":
-                exit(0)
+                sys.exit(0)
         else:
             print(f"Report file is {int(minutes_old)} minutes old. Generating pinout image ...")
     else:

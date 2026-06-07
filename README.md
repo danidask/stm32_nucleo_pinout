@@ -19,6 +19,22 @@ Example of output image:
 
 # Getting Started
 
+## Installation
+
+**From a local clone:**
+```bash
+git clone https://github.com/danidask/stm32_nucleo_pinout.git
+cd stm32_nucleo_pinout
+pip install .
+```
+
+**Directly from GitHub (no clone needed):**
+```bash
+pip install git+https://github.com/danidask/stm32_nucleo_pinout.git
+```
+
+## Usage
+
 With STM32CubeMX (or STM32CubeIDE), generate a report file (File -> Generate Report)
 
 Then run the script with the report file as input (the txt, not the pdf):

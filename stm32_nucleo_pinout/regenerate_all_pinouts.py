@@ -1,4 +1,4 @@
-from generate_pinout import generate_pinout
+from stm32_nucleo_pinout.generate_pinout import generate_pinout
 import os
 import logging
 
@@ -6,7 +6,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BOARDS_DIR = os.path.join(SCRIPT_DIR, "..", "boards")
+BOARDS_DIR = os.path.join(SCRIPT_DIR, "boards")
 
 
 if __name__ == "__main__":

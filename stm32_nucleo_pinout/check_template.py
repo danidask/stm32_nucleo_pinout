@@ -1,4 +1,4 @@
-from stm32_nucleo_pinout import prepare_image, get_template_data
+from stm32_nucleo_pinout import prepare_image, get_template_data, TEMPLATES_DIR
 from tkinter import Tk, Label
 from PIL import ImageTk
 import os
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # check if the image exists
-    if not os.path.exists(os.path.join("templates", args.template, args.image)):
+    if not os.path.exists(os.path.join(TEMPLATES_DIR, args.template, args.image)):
         print(f"Image {args.image} not found in template {args.template}")
         sys.exit(1)
 
